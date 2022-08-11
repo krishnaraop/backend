@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // use it before all route definitions
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors());
 // app.use('/api/goals', require('./routes/goalRoutes'));
 app.use("/api/users", require("./routes/userRoutes"));
 
